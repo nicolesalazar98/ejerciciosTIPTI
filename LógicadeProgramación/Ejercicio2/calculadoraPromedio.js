@@ -1,4 +1,6 @@
 let nombre=prompt("Ingrese su nombre completo");
+
+
 let c1, c2, c3;
 // do {
 //     c1=parseInt (prompt("Ingrese la primera calificación"));

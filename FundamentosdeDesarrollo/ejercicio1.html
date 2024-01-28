@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1. Fibonacci</title>
+</head>
+<body>
+
+    <script>
+
+        /* EJERCICIO 1.-
+
+        Imprimir el número de elementos solicitados de la serie Fibonacci
+
+       */
+        
+        let numeroDeElementos = parseInt (prompt("Ingrese en dígitos la cantidad de elementos que desea imprimir de la serie Fibonacci"))
+        let serieFibonacci= []
+
+        let a = 0
+        let b = 1
+        let c = 0
+
+        if (!isNaN (numeroDeElementos)) { 
+
+        while (serieFibonacci.length <= numeroDeElementos-1) {
+            if (c==0){
+                serieFibonacci.push (c);   
+            }
+  
+            c= a + b;
+            b = a;
+            a = c;
+            serieFibonacci.push (c);    
+        }
+
+        console.log(serieFibonacci);
+
+    } else {
+        alert ("Inserte un número en dígito/s para que sea válido")
+    }
+                
+
+    </script>
+
+
+</body>
+</html>
